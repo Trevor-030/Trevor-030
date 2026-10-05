@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Trevor-030 — Full-Stack Developer</title>
+  <desc id="desc">Animated dark editorial developer profile banner with a subtle grid, terminal cursor, and lime accent.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#080a0a"/>
+      <stop offset="1" stop-color="#111515"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#c8ff4a" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#c8ff4a" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#c8ff4a" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#c8ff4a" stroke-opacity="0.055" stroke-width="1"/>
+    </pattern>
+    <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="reveal">
+      <rect x="165" y="108" width="0" height="72">
+        <animate attributeName="width" from="0" to="870" dur="1.8s" begin="0.35s" fill="freeze"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <rect width="1200" height="360" rx="24" fill="url(#bg)"/>
+  <rect x="1" y="1" width="1198" height="358" rx="23" fill="none" stroke="#c8ff4a" stroke-opacity="0.12"/>
+  <rect width="1200" height="360" fill="url(#grid)"/>
+
+  <g opacity="0.5">
+    <circle cx="1010" cy="76" r="130" fill="none" stroke="#c8ff4a" stroke-opacity="0.07">
+      <animate attributeName="r" values="110;145;110" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.25;0.55;0.25" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1010" cy="76" r="76" fill="none" stroke="#c8ff4a" stroke-opacity="0.06"/>
+  </g>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace">
+    <text x="54" y="54" fill="#c8ff4a" font-size="12" letter-spacing="3" opacity="0.8">PROFILE / 030</text>
+    <text x="1110" y="54" fill="#9aa39f" font-size="11" text-anchor="end">GHANA · GMT</text>
+
+    <g clip-path="url(#reveal)">
+      <text x="165" y="165" fill="#f2f5f2" font-size="66" font-weight="800" letter-spacing="-2">TREVOR-030</text>
+    </g>
+
+    <rect x="165" y="191" width="865" height="1" fill="url(#glow)" opacity="0">
+      <animate attributeName="opacity" values="0;1;1;0" dur="8s" begin="1.4s" repeatCount="indefinite"/>
+    </rect>
+
+    <text x="168" y="226" fill="#c8ff4a" font-size="15" letter-spacing="2" opacity="0">
+      FULL-STACK DEVELOPER · WEB · MOBILE · AI
+      <animate attributeName="opacity" values="0;0;1;1;1" dur="2.8s" begin="1.65s" fill="freeze"/>
+    </text>
+
+    <text x="168" y="263" fill="#a8b0ac" font-size="14" opacity="0">
+      Building digital products with thoughtful interfaces and solid engineering.
+      <animate attributeName="opacity" values="0;0;1" dur="2s" begin="2.05s" fill="freeze"/>
+    </text>
+
+    <g transform="translate(168 300)">
+      <circle cx="7" cy="-4" r="4" fill="#c8ff4a" filter="url(#softGlow)">
+        <animate attributeName="opacity" values="0.35;1;0.35" dur="2.4s" repeatCount="indefinite"/>
+      </circle>
+      <text x="22" y="0" fill="#68726d" font-size="12">shipping ideas → turning them into products</text>
+    </g>
+
+    <g transform="translate(1048 302)">
+      <text x="0" y="0" fill="#68726d" font-size="11">$ whoami</text>
+      <rect x="64" y="-10" width="7" height="14" fill="#c8ff4a">
+        <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+  </g>
+
+  <rect x="-100" y="0" width="80" height="360" fill="#c8ff4a" opacity="0.025">
+    <animate attributeName="x" from="-100" to="1220" dur="9s" repeatCount="indefinite"/>
+  </rect>
+</svg>
