@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/profile-hero.svg" alt="Trevor-030 — Full-Stack Developer" width="100%" />
+<img src="./assets/profile-hero.svg" alt="Michael Agyenim Boateng Anning — Full-Stack Developer" width="100%" />
 
 <p>
   <a href="https://github.com/Trevor-030"><img src="https://img.shields.io/badge/GitHub-Trevor--030-111515?style=flat-square&logo=github&logoColor=white" alt="GitHub" /></a>
