@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/profile-hero.svg" alt="Michael Agyenim Boateng Anning — Full-Stack Developer" width="100%" />
+<img src="assets/profile-hero.svg" alt="Michael Agyenim Boateng Anning — Full-Stack Developer" width="100%" />
 
 <p>
   <a href="https://github.com/Trevor-030"><img src="https://img.shields.io/badge/GitHub-Trevor--030-111515?style=flat-square&logo=github&logoColor=white" alt="GitHub" /></a>
@@ -10,7 +10,7 @@
 
 </div>
 
-<img src="./assets/divider.svg" width="100%" alt="" />
+<img src="assets/divider.svg" width="100%" alt="" />
 
 ## About
 
@@ -117,7 +117,7 @@ Tools that combine software engineering with intelligent automation.
 
 </div>
 
-<img src="./assets/divider.svg" width="100%" alt="" />
+<img src="assets/divider.svg" width="100%" alt="" />
 
 <div align="center">
 
