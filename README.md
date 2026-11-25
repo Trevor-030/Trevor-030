@@ -1,9 +1,9 @@
 <a href="https://danielstrevor.vercel.app"><img src="assets/profile-hero.svg" width="100%" alt="Akwaaba, I'm Michael Agyenim Boateng Anning. I build web apps, mobile apps, real-time systems and AI-powered tools." /></a>
 
 <p align="center">
-  <a href="https://danielstrevor.vercel.app"><img src="https://img.shields.io/badge/Portfolio-danielstrevor.vercel.app-F2B33D?style=flat-square&labelColor=0D2B20&logo=vercel&logoColor=F5ECD7" alt="Portfolio" /></a>
-  <a href="https://www.linkedin.com/in/michael-agyenim-boateng-anning-3077593aa"><img src="https://img.shields.io/badge/LinkedIn-Connect-F2B33D?style=flat-square&labelColor=0D2B20&logo=linkedin&logoColor=F5ECD7" alt="LinkedIn" /></a>
-  <a href="https://github.com/Trevor-030?tab=followers"><img src="https://img.shields.io/github/followers/Trevor-030?style=flat-square&label=Followers&color=F2B33D&labelColor=0D2B20&logo=github&logoColor=F5ECD7" alt="GitHub followers" /></a>
+  <a href="https://danielstrevor.vercel.app"><img src="https://img.shields.io/badge/Portfolio-danielstrevor.vercel.app-F2B33D?style=flat-square&labelColor=0A0A0A&logo=vercel&logoColor=FFFFFF" alt="Portfolio" /></a>
+  <a href="https://www.linkedin.com/in/michael-agyenim-boateng-anning-3077593aa"><img src="https://img.shields.io/badge/LinkedIn-Connect-F2B33D?style=flat-square&labelColor=0A0A0A&logo=linkedin&logoColor=FFFFFF" alt="LinkedIn" /></a>
+  <a href="https://github.com/Trevor-030?tab=followers"><img src="https://img.shields.io/github/followers/Trevor-030?style=flat-square&label=Followers&color=F2B33D&labelColor=0A0A0A&logo=github&logoColor=FFFFFF" alt="GitHub followers" /></a>
 </p>
 
 I'm a Computer Science & Engineering student at UMaT and a full-stack developer in Ghana. I build web and mobile products end to end: the interface, the API, the database and the deploy.
@@ -43,17 +43,17 @@ Lately that means an Android app that reads Mobile Money texts, a hostel finder 
 ## On GitHub
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Trevor-030&show_icons=true&hide_border=true&border_radius=18&bg_color=0D2B20&title_color=F2B33D&icon_color=F2B33D&text_color=F5ECD7&ring_color=F2B33D" height="165" alt="GitHub stats for Trevor-030" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Trevor-030&layout=compact&langs_count=6&hide_border=true&border_radius=18&bg_color=0D2B20&title_color=F2B33D&text_color=F5ECD7" height="165" alt="Most used languages" />
+  <img src="https://github-readme-stats.vercel.app/api?username=Trevor-030&show_icons=true&hide_border=true&border_radius=18&bg_color=0A0A0A&title_color=F2B33D&icon_color=F2B33D&text_color=FFFFFF&ring_color=F2B33D" height="165" alt="GitHub stats for Trevor-030" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Trevor-030&layout=compact&langs_count=6&hide_border=true&border_radius=18&bg_color=0A0A0A&title_color=F2B33D&text_color=FFFFFF" height="165" alt="Most used languages" />
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=Trevor-030&hide_border=true&border_radius=18&background=0D2B20&stroke=1F5A3F&ring=F2B33D&fire=CE3B2B&currStreakNum=F5ECD7&currStreakLabel=F2B33D&sideNums=F5ECD7&sideLabels=A9BFB2&dates=A9BFB2" alt="Contribution streak" />
+  <img src="https://streak-stats.demolab.com?user=Trevor-030&hide_border=true&border_radius=18&background=0A0A0A&stroke=3A2E14&ring=F2B33D&fire=F2B33D&currStreakNum=FFFFFF&currStreakLabel=F2B33D&sideNums=FFFFFF&sideLabels=A39E93&dates=A39E93" alt="Contribution streak" />
 </p>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Trevor-030/Trevor-030/output/snake-kente-dark.svg" />
-  <img src="https://raw.githubusercontent.com/Trevor-030/Trevor-030/output/snake-kente-light.svg" width="100%" alt="A snake eating my contribution graph" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Trevor-030/Trevor-030/output/snake-gold-dark.svg" />
+  <img src="https://raw.githubusercontent.com/Trevor-030/Trevor-030/output/snake-gold-light.svg" width="100%" alt="A snake eating my contribution graph" />
 </picture>
 
 <img src="assets/footer.svg" width="100%" alt="Medaase for stopping by. Build. Ship. Learn. Repeat." />
