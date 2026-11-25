@@ -27,14 +27,15 @@ FONT_URL = (
     "BricolageGrotesque%5Bopsz,wdth,wght%5D.ttf"
 )
 
-# Palette: kente gold woven with black, on a black ground.
-INK = "#0A0A0A"
+# Palette: kente cloth and the Ghana flag on a deep forest ground.
+FOREST = "#0D2B20"
+FOREST_2 = "#133829"
 GOLD = "#F2B33D"
-BRONZE = "#A8761F"
-PALE_GOLD = "#F7D88A"
-WHITE = "#FFFFFF"
-MUTED = "#A39E93"
-THREAD_BLACK = "#1C1812"
+RED = "#CE3B2B"
+LEAF = "#3FA36B"
+COTTON = "#F5ECD7"
+SAGE = "#A9BFB2"
+THREAD_BLACK = "#1A1410"
 
 
 # ---------------------------------------------------------------- type
@@ -108,21 +109,21 @@ def kente_column(w: float, seed: int) -> tuple[list[str], float]:
         h = rng.choice([28, 34, 40, 46])
         if kind == "bands":
             colors = rng.choice([
-                [GOLD, THREAD_BLACK, GOLD, BRONZE, GOLD],
-                [PALE_GOLD, GOLD, THREAD_BLACK, GOLD, PALE_GOLD],
-                [BRONZE, GOLD, PALE_GOLD, GOLD, BRONZE],
+                [GOLD, THREAD_BLACK, GOLD, RED, GOLD],
+                [LEAF, GOLD, THREAD_BLACK, GOLD, LEAF],
+                [RED, GOLD, LEAF, GOLD, RED],
             ])
             bh = h / len(colors)
             for i, c in enumerate(colors):
                 out.append(f'<rect y="{y + i * bh:.1f}" width="{w}" height="{bh + 0.3:.1f}" fill="{c}"/>')
         elif kind == "warp":
-            colors = rng.choice([[GOLD, PALE_GOLD], [GOLD, THREAD_BLACK], [BRONZE, GOLD]])
+            colors = rng.choice([[GOLD, LEAF], [GOLD, THREAD_BLACK], [RED, GOLD]])
             out.append(f'<rect y="{y:.1f}" width="{w}" height="{h}" fill="{colors[0]}"/>')
             step = w / 8
             for i in range(1, 8, 2):
                 out.append(f'<rect x="{i * step:.1f}" y="{y:.1f}" width="{step:.1f}" height="{h}" fill="{colors[1]}"/>')
         elif kind == "check":
-            a, b = rng.choice([(GOLD, THREAD_BLACK), (GOLD, BRONZE), (PALE_GOLD, GOLD)])
+            a, b = rng.choice([(GOLD, THREAD_BLACK), (GOLD, RED), (LEAF, GOLD)])
             cell = w / 5
             rows = max(2, round(h / cell))
             cell_h = h / rows
@@ -135,7 +136,7 @@ def kente_column(w: float, seed: int) -> tuple[list[str], float]:
                             f'width="{cell:.1f}" height="{cell_h:.1f}" fill="{b}"/>'
                         )
         else:  # diamond motif on a gold ground
-            ground, mark = rng.choice([(GOLD, THREAD_BLACK), (THREAD_BLACK, GOLD), (BRONZE, GOLD)])
+            ground, mark = rng.choice([(GOLD, THREAD_BLACK), (THREAD_BLACK, GOLD), (RED, GOLD)])
             out.append(f'<rect y="{y:.1f}" width="{w}" height="{h}" fill="{ground}"/>')
             cx, cy = w / 2, y + h / 2
             dx, dy = w * 0.32, h * 0.38
@@ -188,14 +189,6 @@ def svg(width, height, title, desc, style, body) -> str:
     )
 
 
-def outline(w, h, rx) -> str:
-    """Faint gold edge so the black card holds its shape on GitHub's dark page."""
-    return (
-        f'<rect x=".5" y=".5" width="{w - 1}" height="{h - 1}" rx="{rx}" '
-        f'fill="none" stroke="{GOLD}" stroke-opacity=".22"/>'
-    )
-
-
 # ---------------------------------------------------------------- hero
 def hero(f: dict[str, Face]) -> str:
     W, H = 1200, 420
@@ -215,7 +208,7 @@ def hero(f: dict[str, Face]) -> str:
     body = [
         f'<clipPath id="card"><rect width="{W}" height="{H}" rx="22"/></clipPath>',
         '<g clip-path="url(#card)">',
-        f'<rect width="{W}" height="{H}" fill="{INK}"/>',
+        f'<rect width="{W}" height="{H}" fill="{FOREST}"/>',
     ]
 
     # The loom: six strips that weave in, then drift up and down forever.
@@ -235,12 +228,12 @@ def hero(f: dict[str, Face]) -> str:
         x = loom_x + i * strip_w
         body.append(
             f'<rect class="cover" style="animation-delay:{0.15 + i * 0.12:.2f}s" '
-            f'x="{x}" y="0" width="{strip_w}" height="{H}" fill="{INK}"/>'
+            f'x="{x}" y="0" width="{strip_w}" height="{H}" fill="{FOREST}"/>'
         )
     # seams between strips, like the hand-sewn joins of a kente cloth
     for i in range(1, strips):
         x = loom_x + i * strip_w
-        body.append(f'<rect x="{x - 0.75}" width="1.5" height="{H}" fill="{INK}" opacity=".55"/>')
+        body.append(f'<rect x="{x - 0.75}" width="1.5" height="{H}" fill="{FOREST}" opacity=".55"/>')
 
     # Words
     left = 64
@@ -250,12 +243,12 @@ def hero(f: dict[str, Face]) -> str:
         body.append(
             f'<clipPath id="ln{line}"><rect x="0" y="{base - 90}" width="880" height="112"/></clipPath>'
             f'<g clip-path="url(#ln{line})"><g class="rise" style="animation-delay:{0.35 + line * 0.14:.2f}s">'
-            f'{f["display"].draw(text, left, base, name_size, WHITE, tracking=-0.025)}</g></g>'
+            f'{f["display"].draw(text, left, base, name_size, COTTON, tracking=-0.025)}</g></g>'
         )
 
     lead = "I build "
     lead_w = f["sub"].width(lead, 30)
-    body.append(f'<g class="fade" style="animation-delay:1.1s">{f["sub"].draw(lead, left, 340, 30, WHITE)}</g>')
+    body.append(f'<g class="fade" style="animation-delay:1.1s">{f["sub"].draw(lead, left, 340, 30, COTTON)}</g>')
     words = ["web apps.", "mobile apps.", "real-time systems.", "AI-powered tools."]
     for i, w in enumerate(words):
         body.append(
@@ -264,9 +257,9 @@ def hero(f: dict[str, Face]) -> str:
         )
     body.append(
         f'<g class="fade" style="animation-delay:1.5s">'
-        f'{f["body"].draw("Computer Science & Engineering student at UMaT in Tarkwa, Ghana", left, 382, 17, MUTED)}</g>'
+        f'{f["body"].draw("Computer Science & Engineering student at UMaT in Tarkwa, Ghana", left, 382, 17, SAGE)}</g>'
     )
-    body.append("</g>" + outline(W, H, 22))
+    body.append("</g>")
     return svg(
         W, H,
         "Michael Agyenim Boateng Anning, full-stack developer",
@@ -321,17 +314,17 @@ def project_row(f, name, blurb, stack, action, seed) -> str:
     action_w = f["sub"].width(action, 17)
     body = (
         f'<clipPath id="c"><rect width="{W}" height="{H}" rx="18"/></clipPath>'
-        f'<g clip-path="url(#c)"><rect width="{W}" height="{H}" fill="{INK}"/>'
+        f'<g clip-path="url(#c)"><rect width="{W}" height="{H}" fill="{FOREST}"/>'
         f'<g class="k">{tiles}</g>'
-        f'<rect class="cover" width="16" height="{H}" fill="{INK}"/>'
-        f'<g class="fade" style="animation-delay:.25s">{f["display"].draw(name, 52, 62, 38, WHITE, tracking=-0.02)}</g>'
-        f'<g class="fade" style="animation-delay:.4s">{f["body"].draw(blurb, 52, 96, 19, WHITE)}</g>'
-        f'<g class="fade" style="animation-delay:.55s">{f["body"].draw(stack, 52, 126, 15, MUTED)}</g>'
+        f'<rect class="cover" width="16" height="{H}" fill="{FOREST}"/>'
+        f'<g class="fade" style="animation-delay:.25s">{f["display"].draw(name, 52, 62, 38, COTTON, tracking=-0.02)}</g>'
+        f'<g class="fade" style="animation-delay:.4s">{f["body"].draw(blurb, 52, 96, 19, COTTON)}</g>'
+        f'<g class="fade" style="animation-delay:.55s">{f["body"].draw(stack, 52, 126, 15, SAGE)}</g>'
         # a thread running through, to show the work is still on the loom
         f'<line class="thread" x1="880" y1="74" x2="1140" y2="74" stroke="{GOLD}" stroke-width="3" stroke-linecap="round"/>'
-        f'<line x1="880" y1="74" x2="1140" y2="74" stroke="{BRONZE}" stroke-width="3" opacity=".35"/>'
+        f'<line x1="880" y1="74" x2="1140" y2="74" stroke="{RED}" stroke-width="3" opacity=".35"/>'
         f'{f["sub"].draw(action, 1140 - action_w, 110, 17, GOLD)}'
-        f"</g>{outline(W, H, 18)}"
+        "</g>"
     )
     return svg(W, H, name, f"{name}: {blurb} Built with {stack}.", style, body)
 
@@ -346,12 +339,12 @@ def footer(f) -> str:
     )
     body = (
         f'<clipPath id="c"><rect width="{W}" height="{H}" rx="22"/></clipPath>'
-        f'<g clip-path="url(#c)"><rect width="{W}" height="{H}" fill="{INK}"/>{band}'
+        f'<g clip-path="url(#c)"><rect width="{W}" height="{H}" fill="{FOREST}"/>{band}'
         f'<g class="fade" style="animation-delay:.2s">'
-        f'{f["display"].draw("Medaase for stopping by.", W / 2, 122, 54, WHITE, tracking=-0.02, anchor="middle")}</g>'
+        f'{f["display"].draw("Medaase for stopping by.", W / 2, 122, 54, COTTON, tracking=-0.02, anchor="middle")}</g>'
         f'<g class="fade" style="animation-delay:.45s">'
         f'{f["sub"].draw("Build. Ship. Learn. Repeat.", W / 2, 172, 22, GOLD, anchor="middle")}</g>'
-        f"</g>{outline(W, H, 22)}"
+        "</g>"
     )
     return svg(
         W, H, "Medaase for stopping by",

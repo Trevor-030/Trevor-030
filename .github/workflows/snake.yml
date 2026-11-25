@@ -16,12 +16,12 @@ jobs:
         uses: Platane/snk@v3
         with:
           github_user_name: Trevor-030
-          # gold on black: empty days dark, busier days brighter gold
+          # kente colours: forest for empty days, then leaf, gold and red
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-            dist/snake-gold-dark.svg?color_snake=#FFFFFF&color_dots=#1C1812,#5C4415,#A8761F,#D99A2B,#F2B33D&color_dot_border=#0A0A0A
-            dist/snake-gold-light.svg?color_snake=#0A0A0A&color_dots=#EEEAE0,#F7D88A,#F2B33D,#C08A25,#7A5A1C&color_dot_border=#DDD6C6
+            dist/snake-kente-dark.svg?color_snake=#F2B33D&color_dots=#133829,#2E6B4A,#3FA36B,#F2B33D,#CE3B2B&color_dot_border=#0D2B20
+            dist/snake-kente-light.svg?color_snake=#CE3B2B&color_dots=#EDE4CC,#9CCBAE,#3FA36B,#F2B33D,#CE3B2B&color_dot_border=#D9CFB4
       - name: Publish output branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
