@@ -25,7 +25,7 @@ Lately that means an Android app that reads Mobile Money texts, a hostel finder 
 | **[Uni-Cam](https://uni-cam.vercel.app)** | Random video chat for university students | Next.js, WebRTC, Socket.IO |
 | **[Miuzicly](https://miuzicly.vercel.app)** | Music streaming and discovery with real-time playback | Next.js, TypeScript, Node.js |
 | **[Rabi Reigns](https://rabireigns.vercel.app)** | Website for a Ghanaian Afrobeats artist | Next.js, Tailwind, GSAP |
-| **[SL](https://sl-jade.vercel.app)** | Corporate platform for a production company | React, Vite, Tailwind, Framer Motion |
+| **[SL](https://sl-gh.com)** | Corporate platform for a production company | React, Vite, Tailwind, Framer Motion |
 | **[Portfolio](https://danielstrevor.vercel.app)** | My interactive developer portfolio | Next.js, TypeScript, Tailwind |
 | **FaceGuard** | Desktop app that monitors a camera with face recognition | Python, OpenCV, dlib, SQLite |
 
