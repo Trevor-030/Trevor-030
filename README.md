@@ -1,128 +1,58 @@
-<div align="center">
+<a href="https://danielstrevor.vercel.app"><img src="assets/profile-hero.svg" width="100%" alt="Akwaaba, I'm Michael Agyenim Boateng Anning. I build web apps, mobile apps, real-time systems and AI-powered tools." /></a>
 
-<img src="assets/profile-hero.svg" alt="Michael Agyenim Boateng Anning — Full-Stack Developer" width="100%" />
-
-<p>
-  <a href="https://github.com/Trevor-030"><img src="https://img.shields.io/badge/GitHub-Trevor--030-111515?style=flat-square&logo=github&logoColor=white" alt="GitHub" /></a>
-  <a href="https://danielstrevor.vercel.app"><img src="https://img.shields.io/badge/Portfolio-Visit-111515?style=flat-square&logo=vercel&logoColor=white" alt="Portfolio" /></a>
-  <a href="https://www.linkedin.com"><img src="https://img.shields.io/badge/LinkedIn-Connect-111515?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+<p align="center">
+  <a href="https://danielstrevor.vercel.app"><img src="https://img.shields.io/badge/Portfolio-danielstrevor.vercel.app-F2B33D?style=flat-square&labelColor=0D2B20&logo=vercel&logoColor=F5ECD7" alt="Portfolio" /></a>
+  <a href="https://github.com/Trevor-030?tab=followers"><img src="https://img.shields.io/github/followers/Trevor-030?style=flat-square&label=Followers&color=F2B33D&labelColor=0D2B20&logo=github&logoColor=F5ECD7" alt="GitHub followers" /></a>
 </p>
 
-</div>
+I'm a Computer Science & Engineering student at UMaT and a full-stack developer in Ghana. I build web and mobile products end to end: the interface, the API, the database and the deploy.
+
+Lately that means an Android app that reads Mobile Money texts, a hostel finder for students, and video chat over WebRTC. I care about products that feel as good to use as they were to build.
 
 <img src="assets/divider.svg" width="100%" alt="" />
 
-## About
+## Now building
 
-I'm a **Computer Science & Engineering student at UMaT** and a developer focused on turning ideas into polished digital products.
+<a href="https://github.com/Trevor-030/AuCourant"><img src="assets/now-aucourant.svg" width="100%" alt="AuCourant: turns MTN and Telecel Mobile Money texts into a searchable ledger. Android, Expo, React Native, Java." /></a>
+<a href="https://lodge-nest-portfolio.vercel.app"><img src="assets/now-lodgenest.svg" width="100%" alt="LodgeNest: helps students in Ghana find and compare hostels on a live map. Expo, React Native, Supabase." /></a>
+<a href="https://github.com/Trevor-030/YouTube-Playlist-and-Channel-Downloader-CLI"><img src="assets/now-yt-cli.svg" width="100%" alt="YouTube Downloader CLI: saves playlists, channels and transcripts from the terminal. Python, yt-dlp." /></a>
 
-I work across **web, mobile, backend, real-time systems, and AI-powered tools** — with a particular interest in products that feel as good to use as they are to build.
+## Shipped
 
-- 🚀 Building and shipping products, not just demos
-- 🌐 Full-stack web development
-- 📱 React Native & Expo mobile development
-- ⚡ Real-time experiences with WebRTC and Socket.IO
-- 🤖 Exploring practical AI-powered applications
-- 🇬🇭 Building from Ghana
-
-## What I Build
-
-<table>
-<tr>
-<td width="50%">
-
-### 🌐 Web
-Modern, responsive applications with strong UI and real product architecture.
-
-`Next.js` `React` `TypeScript` `Tailwind`
-
-</td>
-<td width="50%">
-
-### 📱 Mobile
-Cross-platform mobile experiences designed around real users and real workflows.
-
-`React Native` `Expo`
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-### ⚡ Real-time
-Communication and interactive systems where latency actually matters.
-
-`WebRTC` `Socket.IO` `Node.js`
-
-</td>
-<td width="50%">
-
-### 🤖 AI & Computer Vision
-Tools that combine software engineering with intelligent automation.
-
-`Python` `OpenCV` `AI APIs`
-
-</td>
-</tr>
-</table>
-
-## Tech Stack
-
-**Frontend**  
-`Next.js` · `React` · `TypeScript` · `Tailwind CSS` · `Framer Motion` · `GSAP`
-
-**Mobile**  
-`React Native` · `Expo`
-
-**Backend & Real-time**  
-`Node.js` · `Python` · `Socket.IO` · `WebRTC` · `Express`
-
-**Data & Platforms**  
-`PostgreSQL` · `MongoDB` · `Appwrite` · `Supabase` · `Firebase`
-
-**Tools**  
-`Git` · `GitHub` · `Vercel` · `Render` · `OpenCV`
-
-## Featured Projects
-
-| Project | What it is | Stack |
+| Project | What it does | Built with |
 |---|---|---|
-| 🎥 **[Uni-Cam](https://uni-cam.vercel.app)** | University-focused random video communication platform | Next.js · WebRTC · Socket.IO |
-| 🎶 **[Miuzicly](https://miuzicly.vercel.app)** | Music streaming & discovery experience with real-time playback | Next.js · TypeScript · Node.js |
-| 🎵 **[Rabi Reigns](https://rabireigns.vercel.app)** | Artist website for a Ghanaian Afrobeat act | Next.js · Tailwind · GSAP |
-| 🏢 **[SL](https://sl-jade.vercel.app)** | Production-focused corporate platform | React · Vite · Tailwind · Framer Motion |
-| 🌐 **[Portfolio](https://danielstrevor.vercel.app)** | Interactive developer portfolio | Next.js · TypeScript · Tailwind |
-| 🛡️ **FaceGuard** | Desktop face-recognition monitoring application | Python · OpenCV · dlib · SQLite |
+| **[Uni-Cam](https://uni-cam.vercel.app)** | Random video chat for university students | Next.js, WebRTC, Socket.IO |
+| **[Miuzicly](https://miuzicly.vercel.app)** | Music streaming and discovery with real-time playback | Next.js, TypeScript, Node.js |
+| **[Rabi Reigns](https://rabireigns.vercel.app)** | Website for a Ghanaian Afrobeats artist | Next.js, Tailwind, GSAP |
+| **[SL](https://sl-jade.vercel.app)** | Corporate platform for a production company | React, Vite, Tailwind, Framer Motion |
+| **[Portfolio](https://danielstrevor.vercel.app)** | My interactive developer portfolio | Next.js, TypeScript, Tailwind |
+| **FaceGuard** | Desktop app that monitors a camera with face recognition | Python, OpenCV, dlib, SQLite |
 
-## GitHub Activity
+## Tools I reach for
 
-<div align="center">
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=ts,react,nextjs,tailwind,nodejs,express,python,java,opencv&perline=9" alt="TypeScript, React, Next.js, Tailwind CSS, Node.js, Express, Python, Java, OpenCV" /><br/>
+  <img src="https://skillicons.dev/icons?i=postgres,supabase,mongodb,firebase,appwrite,androidstudio,vercel,git&perline=8" alt="PostgreSQL, Supabase, MongoDB, Firebase, Appwrite, Android Studio, Vercel, Git" />
+</p>
 
-<img src="https://github-readme-stats.vercel.app/api?username=Trevor-030&show_icons=true&hide_border=true&theme=dark&bg_color=0D1117&title_color=C8FF4A&icon_color=C8FF4A&text_color=9AA39F" height="165" alt="GitHub stats" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Trevor-030&layout=compact&hide_border=true&theme=dark&bg_color=0D1117&title_color=C8FF4A&text_color=9AA39F&langs_count=6" height="165" alt="Top languages" />
-
-</div>
-
-<div align="center">
-
-<img src="https://streak-stats.demolab.com?user=Trevor-030&theme=dark&hide_border=true&background=0D1117&ring=C8FF4A&fire=C8FF4A&currStreakLabel=C8FF4A" alt="GitHub streak" />
-
-</div>
-
-## Contribution Trail
-
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/Trevor-030/Trevor-030/output/github-contribution-grid-snake-dark.svg" alt="GitHub contribution snake" width="100%" />
-
-</div>
+<p align="center">Mobile apps with React Native and Expo. Real-time features with WebRTC and Socket.IO. Motion with GSAP and Framer Motion.</p>
 
 <img src="assets/divider.svg" width="100%" alt="" />
 
-<div align="center">
+## On GitHub
 
-**Build. Ship. Learn. Repeat.**
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Trevor-030&show_icons=true&hide_border=true&border_radius=18&bg_color=0D2B20&title_color=F2B33D&icon_color=F2B33D&text_color=F5ECD7&ring_color=F2B33D" height="165" alt="GitHub stats for Trevor-030" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Trevor-030&layout=compact&langs_count=6&hide_border=true&border_radius=18&bg_color=0D2B20&title_color=F2B33D&text_color=F5ECD7" height="165" alt="Most used languages" />
+</p>
 
-<sub>Built with 🖤 from Ghana 🇬🇭</sub>
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=Trevor-030&hide_border=true&border_radius=18&background=0D2B20&stroke=1F5A3F&ring=F2B33D&fire=CE3B2B&currStreakNum=F5ECD7&currStreakLabel=F2B33D&sideNums=F5ECD7&sideLabels=A9BFB2&dates=A9BFB2" alt="Contribution streak" />
+</p>
 
-</div>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Trevor-030/Trevor-030/output/snake-kente-dark.svg" />
+  <img src="https://raw.githubusercontent.com/Trevor-030/Trevor-030/output/snake-kente-light.svg" width="100%" alt="A snake eating my contribution graph" />
+</picture>
+
+<img src="assets/footer.svg" width="100%" alt="Medaase for stopping by. Build. Ship. Learn. Repeat." />
