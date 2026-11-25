@@ -2,6 +2,7 @@
 
 <p align="center">
   <a href="https://danielstrevor.vercel.app"><img src="https://img.shields.io/badge/Portfolio-danielstrevor.vercel.app-F2B33D?style=flat-square&labelColor=0D2B20&logo=vercel&logoColor=F5ECD7" alt="Portfolio" /></a>
+  <a href="https://www.linkedin.com/in/michael-agyenim-boateng-anning-3077593aa"><img src="https://img.shields.io/badge/LinkedIn-Connect-F2B33D?style=flat-square&labelColor=0D2B20&logo=linkedin&logoColor=F5ECD7" alt="LinkedIn" /></a>
   <a href="https://github.com/Trevor-030?tab=followers"><img src="https://img.shields.io/github/followers/Trevor-030?style=flat-square&label=Followers&color=F2B33D&labelColor=0D2B20&logo=github&logoColor=F5ECD7" alt="GitHub followers" /></a>
 </p>
 
